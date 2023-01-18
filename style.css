@@ -1,0 +1,628 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+.bigred{
+	font-size: 20px;
+	color: red;
+}
+
+/*Шрифты*/
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/fonts/TTLakes-Regular.eot');
+    src: local('/fonts/TT Lakes Regular'), local('TTLakes-Regular'),
+        url('/fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/TTLakes-Regular.woff') format('woff'),
+        url('/fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Medium.eot');
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+        url('/fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/TTLakes-Medium.woff') format('woff'),
+        url('/fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+        url('TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('TTLakes-Bold.woff') format('woff'),
+        url('TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+/*Проект*/
+@media (min-width: 320px) and (max-width: 767px) {
+body {
+    background-color: #F8F8F8;
+    font-family: 'TT Lakes', Arial, sans-serif;
+}
+
+.upper-menu {
+    background-color: white;
+    height: 88px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    border-bottom: 1px solid  #D9FFF5;
+}
+.upper-menu__burger, .upper-menu__repair, .upper-menu__check-status {
+    height: 40px;
+    width: 40px;
+    background-color: #FF3E79;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upper-menu__logo {
+    margin-left: 16px;
+    margin-right: auto;
+}
+.upper-menu__divider-2 {
+    height: 32px;
+    width: 2px;
+    background-color: #EAEAEA;
+    border-radius: 1px;
+}
+.upper-menu__repair {
+    margin-left: 20px;
+}
+.upper-menu__check-status {
+    margin-left: 16px;
+}
+.upper-menu__divider-1, .upper-menu__call, .upper-menu__chat, .upper-menu__profile {
+    display: none;
+}
+
+.title {
+    height: 40px;
+    margin-bottom: 24px;
+}
+.title__block-left {
+    width: 100%;
+    display: flex;
+}
+.title__hightlight {
+    width: 4px;
+    background-color: #41F6D7;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.title__text {
+    width: 288px;
+    margin-left: 12px;
+    color: #1B1C21;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.6px;   
+}
+.title__block-right {
+    display: none;
+}
+
+.slide-menu {
+    height: 40px;
+    margin-bottom: 24px;
+    display: flex;
+    padding-left: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #7E7E82;
+    overflow: hidden;
+}
+.slide-menu__devices, .slide-menu__services, .slide-menu__price, .slide-menu__special-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide-menu__devices {
+    min-width: 246px;
+    border: 2px solid #B8FFEC;
+    background-color: white;
+    order: -1;
+}
+.slide-menu__services {
+    min-width: 211px;
+}
+.slide-menu__price {
+    min-width: 143px;
+}
+.slide-menu__special-price {
+    min-width: 172px;
+}
+.slide-menu__repaired-brands, .slide-menu__address, .slide-menu__reviews {
+    display: none;
+}
+.fade-slide-menu {
+    position: absolute;
+    max-height: 40px;
+    left: 92.5%;
+    right: 0%;
+    top: 176px;
+    bottom:0%;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    }
+
+.info {
+    padding: 0 16px; 
+    margin-bottom: 16px;
+}
+.info__about {
+    height: 90px;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+    margin-bottom: 16px;
+}
+.info__read-more {
+    height: 24px;
+    width: 132px;
+    display: flex;
+}
+.info__read-more-ico {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.info__read-more-text {
+    height: 24px;
+    width: 100px;  
+    margin-left: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+}
+.info-img {
+    width: 100%;
+}
+.info-img__picture {
+    width: 100%;
+}
+}
+
+
+@media (min-width: 768px) and (max-width: 1119px)  {
+body {
+    background-color: #F8F8F8;
+    font-family: 'TT Lakes', Arial, sans-serif;
+}
+    
+.upper-menu {
+    background-color: white;
+    height: 88px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 40px;
+    border-bottom: 1px solid  #D9FFF5;
+}
+.upper-menu__burger, .upper-menu__call, .upper-menu__chat, .upper-menu__profile,
+.upper-menu__repair, .upper-menu__check-status {
+    height: 40px;
+    width: 40px;
+    background-color: #FF3E79;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upper-menu__divider-1, .upper-menu__divider-2 {
+    height: 32px;
+    width: 2px;
+    background-color: #EAEAEA;
+    border-radius: 1px;
+    margin-left: 20px;
+} 
+.upper-menu__logo {
+    margin-left: 20px;
+    margin-right: auto;
+}
+.upper-menu__chat {
+    margin-left: 16px;
+}
+.upper-menu__profile {
+    margin-left: 16px;
+}
+.upper-menu__repair {
+    margin-left: 20px;
+}
+.upper-menu__check-status {
+    margin-left: 16px;
+}
+
+.title {
+    height: 40px;
+    margin-bottom: 24px;
+}
+.title__block-left {
+    width: 100%;
+    display: flex;
+}
+.title__hightlight {
+    width: 4px;
+    background-color: #41F6D7;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.title__text {
+    margin-left: 20px;
+    color: #1B1C21;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.6px;   
+}
+.title__block-right {
+    display: none;
+}
+
+.slide-menu {
+    height: 40px;
+    margin-bottom: 24px;
+    display: flex;
+    padding-left: 24px;
+    padding-right: 37px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #7E7E82;
+    overflow: hidden;
+}
+.slide-menu__devices, .slide-menu__services, .slide-menu__price, 
+.slide-menu__address, .slide-menu__special-price, .slide-menu__reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide-menu__devices {
+    min-width: 248px;
+    border: 2px solid #B8FFEC;
+    background-color: white;
+    order: -1;
+}
+.slide-menu__services {
+    min-width: 211px;
+}
+.slide-menu__price {
+    min-width: 143px;
+}
+.slide-menu__special-price {
+    min-width: 172px;
+}
+.slide-menu__address {
+    min-width: 233px;
+    order: 2;
+}
+.slide-menu__reviews {
+    min-width: 95px;
+    order: 2;
+}
+.slide-menu__repaired-brands {
+    display: none;
+}
+.fade-slide-menu {
+position: absolute;
+max-height: 40px;
+left: 92.5%;
+right: 0%;
+top: 178px;
+bottom:0%;
+background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+}
+
+.block-info {
+    display: flex;
+    height: 100%;
+    margin-left: 24px;
+    margin-right: 40px;
+}
+.info {
+    width: 50%; 
+    padding-left: 24px;   
+    
+}
+.info__about {
+    height: 160px;
+    min-width: 312px;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+    margin-bottom: 10px;
+    
+
+}
+.info__read-more {
+    height: 24px;
+    width: 132px;
+    margin-left: 1px;
+    display: flex;
+}
+.info__read-more-ico {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.info__read-more-text {
+    height: 24px;
+    width: 100px;  
+    margin-left: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+}
+
+.info-img {
+    width: 50%; 
+    margin-left: 48px;
+}
+.info-img__picture {
+    width: 100%;
+    border-radius: 6px;
+}
+}
+
+
+@media (min-width: 1120px) {
+    body {
+    background-color: #F8F8F8;
+    font-family: 'TT Lakes', Arial, sans-serif;
+}
+    
+.upper-menu {
+    display: none;
+}
+.title {
+    height: 40px;
+    margin-top: 42px;
+    margin-bottom: 8px;
+    display: flex;
+}
+.title__block-left {
+    width: 50%;
+    display: flex;
+}
+.title__hightlight {
+    width: 3px;
+    background-color: #41F6D7;
+    border-radius: 2px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.title__text {
+    margin-left: 30px;
+    color: #1B1C21;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.6px;   
+}
+.title__block-right {
+    width: 50%;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+}
+.title-repair, .title-check {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.title-repair__text, .ttitle-check__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+} 
+
+.title-repair__text {
+    width: 125px;
+    margin-right: 8px;
+}
+.ttitle-check__text {
+    width: 119px;
+    margin-right: 9px;
+}
+.title-repair__img, .title-check__img {
+    height: 40px;
+    width: 40px;
+    margin-right: 32px; 
+    background-color: #FF3E79;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-menu {
+    height: 82px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 32px;
+    padding-right: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #7E7E82;
+    overflow: hidden;
+}
+.slide-menu__repaired-brands, .slide-menu__services, .slide-menu__devices, .slide-menu__price, 
+.slide-menu__address, .slide-menu__special-price, .slide-menu__reviews {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide-menu__repaired-brands {
+    min-width: 233px;
+    border: 2px solid #B8FFEC;
+    background-color: white;
+    order: -1;
+}
+.slide-menu__devices {
+    min-width: 254px;
+}
+.slide-menu__price {
+    min-width: 152px;
+}
+.slide-menu__special-price {
+    min-width: 191px;
+}
+.slide-menu__address {
+    min-width: 233px;
+}
+.slide-menu__reviews {
+    min-width: 95px;
+    padding: 13px 0 3px 24px;
+}
+.slide-menu__services {
+    display: none;
+}
+.fade-slide-menu {
+display: none;
+}
+
+.block-info {
+    display: flex;
+    height: 100%;
+    padding-left: 32px;
+    padding-right: 29px;
+}
+.info {
+    width: 50%; 
+}
+.info__about {
+    min-height: 160px;
+    min-width: 490px;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+    margin-left: 2px;
+    margin-bottom: 14px;
+
+}
+.info__read-more {
+    height: 24px;
+    width: 132px;
+    display: flex;
+}
+.info__read-more-ico {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.info__read-more-text {
+    height: 24px;
+    width: 100px;  
+    margin-left: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+}
+
+.info-img {
+    width: 50%; 
+    margin-left: 36px;
+    padding-right: 29px;
+}
+.info-img__picture {
+    width: 100%;
+    border-radius: 6px;
+}
+}
+
+@media (min-width: 1215px) {
+.slide-menu__reviews {
+    padding: 0;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
