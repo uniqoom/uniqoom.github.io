@@ -657,11 +657,14 @@ display: none;
 }
 
 .sub-menu-title {
-    height: 32px;
-    margin-top: 35px;
+    height: 28px;
+    margin-left: -24px;
     display: flex;
+    align-items: center;
+    background-color: white;
 }
 .sub-menu-title__hightlight {
+    height: 28px;
     width: 4px;
     background-color: #41F6D7;
     border-top-right-radius: 4px;
@@ -670,7 +673,7 @@ display: none;
 .sub-menu-title__text {
     display: flex;
     align-items: center;
-    width: 120px;
+    height: 22px;
     margin-left: 20px;
     color: #7E7E82;
     font-size: 16px;
@@ -687,7 +690,7 @@ display: none;
 }
 
 .sub-menu-list li {
-    margin-top: 32px;
+    margin-top: 28px;
 }
 
 .sub-menu-list a {
