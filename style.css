@@ -790,14 +790,15 @@ display: none;
         padding: 16px;
         margin: 16px 32px;
         width: 240px;
-        height: 72px;
+        max-height: 72px;
         background: #FFFFFF;
         border: 1px solid #EAEAEA;
         border-radius: 6px;
     }
     
-    .repair-brands__img-samsung {
-        width: 72px;
+    .repair-brands__img-custom {
+        height: 72px;
+        padding: 16px;
     }
     
     .repair-brands__all-view, .repair-type__all-view {
@@ -845,8 +846,15 @@ display: none;
     .repair-type__img {
         margin-top: auto;
     }
-    
-    
+
+    /* HIDDEN ELEMENT */
+    .repair-brands__button.repair-brands__button-all {
+        display: flex;
+    }
+    .repair-type__button.repair-type__button-all {
+        display: flex;
+    }
+
     /* BLOCK PRICE */ 
     .price__sub-title {
         display: grid;
