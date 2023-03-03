@@ -1630,7 +1630,7 @@ display: none;
 }
 
 /* SWIPER */
-.swiper, .swiper-wrapper{
+.swiper {
     display: none;
 }
 }
