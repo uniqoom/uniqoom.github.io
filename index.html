@@ -6,64 +6,63 @@
     
     <title> CPS Service Center</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
 
     <body>
         <div class="sub-menu">
-            
-                <div class="sub-menu-up">
-                    <button class="sub-menu-up__closed" type="button">
-                        <img src="/image/Sub-Menu/SubMenu-Closed.svg" alt="Закрыть Меню">
-                    </button>
-                    <div class="sub-menu-up__logo" type="button">
-                        <img src="/image/UpperMenu/Logo.svg" alt="Логотип">
-                    </div>
-                    <button class="sub-menu-up__search" type="button">
-                        <img src="/image/Sub-Menu/SubMenu-Search.svg" alt="Логотип">
-                    </button>
+            <div class="sub-menu-up">
+                <button class="sub-menu-up__closed" type="button">
+                    <img src="/image/Sub-Menu/SubMenu-Closed.svg" alt="Кнопка закрытия меню">
+                </button>
+                <div class="sub-menu-up__logo" type="button">
+                    <img src="/image/UpperMenu/Logo.svg" alt="Логотип">
                 </div>
+                <button class="sub-menu-up__search" type="button">
+                    <img src="/image/Sub-Menu/SubMenu-Search.svg" alt="Кнопка поиска">
+                </button>
+            </div>
 
 
+            <nav>
+                <ul class="sub-menu-list">
+                    <li><a href="">Ремонт техники</a></li>
+                    <li>
+                        <button class="sub-menu-title" type="button">
+                            <div class="sub-menu-title__hightlight"></div>
+                            <div class="sub-menu-title__text">Услуги и сервисы</div>
+                        </button> 
+                    </li>
+                    <li><a href="">Корпоративным клиентам</a></li>
+                    <li><a href="">Продавцам техники</a></li>
+                    <li><a href="">Партнерам</a></li>
+                    <li><a href="">Производителям</a></li>
+                    <li><a href="">Производителям</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </nav>
+        
+        
+            <div class="sub-menu-bottom">
+                <button class="sub-menu-bottom__call" type="button">
+                    <img src="/image/UpperMenu/Phone.svg" alt="Позвонить">
+                </button> 
+                <button class="sub-menu-bottom__chat" type="button">
+                    <img src="/image/UpperMenu/Chat.svg" alt="Написать в чат">
+                </button> 
+                <button class="sub-menu-bottom__profile" type="button">
+                    <img src="/image/UpperMenu/Profile.svg" alt="Профайл">
+                </button> 
+            </div>
 
-                <nav>
-                    <ul class="sub-menu-list">
-                        <li><a href="">Ремонт техники</a></li>
-                        <li>
-                            <button class="sub-menu-title" type="button">
-                                <div class="sub-menu-title__hightlight"></div>
-                                <div class="sub-menu-title__text">Услуги и сервисы</div>
-                            </button> 
-                        </li>
-                        <li><a href="">Корпоративным клиентам</a></li>
-                        <li><a href="">Продавцам техники</a></li>
-                        <li><a href="">Партнерам</a></li>
-                        <li><a href="">Производителям</a></li>
-                        <li><a href="">Производителям</a></li>
-                        <li><a href="">Контакты</a></li>
-                    </ul>
-                </nav>
-            
-            
-                <div class="sub-menu-bottom">
-                    <button class="sub-menu-bottom__call" type="button">
-                        <img src="/image/UpperMenu/Phone.svg" alt="Позвонить">
-                    </button> 
-                    <button class="sub-menu-bottom__chat" type="button">
-                        <img src="/image/UpperMenu/Chat.svg" alt="Написать в чат">
-                    </button> 
-                    <button class="sub-menu-bottom__profile" type="button">
-                        <img src="/image/UpperMenu/Profile.svg" alt="Профайл">
-                    </button> 
-                </div>
+            <p class="sub-menu-mail">mail@cps.com</p>
+            <p class="sub-menu-phone">8 800 890 8900</p>
 
-                <p class="sub-menu-mail">mail@cps.com</p>
-                <p class="sub-menu-phone">8 800 890 8900</p>
-
-                <div class="sub-menu-language">
-                    <a class="sub-menu-language__ru" href="">RU</a>
-                    <a class="sub-menu-language__en" href="">EN</a>
-                    <a class="sub-menu-language__ch" href="">CH</a>
-                </div>
+            <div class="sub-menu-language">
+                <a class="sub-menu-language__ru" href="">RU</a>
+                <a class="sub-menu-language__en" href="">EN</a>
+                <a class="sub-menu-language__ch" href="">CH</a>
+            </div>
         </div>
 
         <main>
@@ -146,6 +145,88 @@
                 </div>
             </div> 
 
+
+            <div class="swiper">
+                <p class="repair-brands__title">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</p>
+                
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <button class="repair-brands__button" type="button">
+                    <img src="/image/Brand/Lenovo.svg" alt="Бренд Lenovo">
+                    <img src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
+                </button>
+                <button class="repair-brands__button" type="button">
+                    <img class="repair-brands__img-custom" src="/image/Brand/Samsung.svg" alt="Бренд Samsung">
+                    <img src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
+                </button>
+                <button class="repair-brands__button" type="button">
+                    <img class="brands__img" src="/image/Brand/Apple.svg" alt="Бренд Apple">
+                    <img src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
+                </button>
+                <button class="repair-brands__button" type="button">
+                    <img class="brands__img" src="/image/Brand/ViewSonic.svg" alt="Бренд ViewSonic">
+                    <img src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
+                </button>
+                <button class="repair-brands__button" type="button">
+                    <img class="brands__img" src="/image/Brand/Bosch.svg" alt="Бренд Bosch">
+                    <img src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
+                </button>
+                <button class="repair-brands__button" type="button">
+                    <img class="brands__img" src="/image/Brand/HP.svg" alt="Бренд HP">
+                    <img src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
+                </button>
+                <button class="repair-brands__button" type="button">
+                    <img class="brands__img" src="/image/Brand/Acer.svg" alt="Бренд Acer">
+                    <img src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
+                </button>
+                <button class="repair-brands__button" type="button">
+                    <img class="brands__img" src="/image/Brand/Sony.svg" alt="Бренд Sony">
+                    <img src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
+                </button>
+
+                <button class="repair-brands__button" type="button">
+                    <img class="repair-brands__img-custom" src="/image/Brand/IBM.svg" alt="Бренд IBM">
+                    <img src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
+                </button>
+                <button class="repair-brands__button" type="button">
+                    <img class="repair-brands__img-custom" src="/image/Brand/Microsoft.svg" alt="Бренд Microsoft">
+                    <img src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
+                </button>
+                <button class="repair-brands__button" type="button">
+                    <img class="repair-brands__img-custom" src="/image/Brand/Intel.svg" alt="Бренд Intel">
+                    <img src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
+                </button>
+                <button class="repair-brands__button" type="button">
+                    <img class="repair-brands__img-custom" src="/image/Brand/Dell.svg" alt="Бренд Dell">
+                    <img src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
+                </button>
+                <button class="repair-brands__button" type="button">
+                    <img class="repair-brands__img-custom" src="/image/Brand/Aoc.svg" alt="Бренд AOC">
+                    <img src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
+                </button>
+                <button class="repair-brands__button" type="button">
+                    <img class="repair-brands__img-custom" src="/image/Brand/Haier.svg" alt="Бренд Haier">
+                    <img src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
+                </button>
+                <button class="repair-brands__button" type="button">
+                    <img class="repair-brands__img-custom" src="/image/Brand/Huawei.svg" alt="Бренд Huawei">
+                    <img src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
+                </button>
+                <button class="repair-brands__button" type="button">
+                    <img class="repair-brands__img-custom" src="/image/Brand/LG.svg" alt="Бренд LG">
+                    <img src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
+                </button>
+                ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+
             <div class="repair-brands">
                 <p class="repair-brands__title">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</p>
 
@@ -183,47 +264,45 @@
                         <img src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
                     </button>
 
-                    
-                    <button class="repair-brands__button repair-brands__button-all" type="button">
+                    <button class="repair-brands__button" type="button">
                         <img class="repair-brands__img-custom" src="/image/Brand/IBM.svg" alt="Бренд IBM">
                         <img src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
                     </button>
-                    <button class="repair-brands__button repair-brands__button-all" type="button">
+                    <button class="repair-brands__button" type="button">
                         <img class="repair-brands__img-custom" src="/image/Brand/Microsoft.svg" alt="Бренд Microsoft">
                         <img src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
                     </button>
-                    <button class="repair-brands__button repair-brands__button-all" type="button">
+                    <button class="repair-brands__button" type="button">
                         <img class="repair-brands__img-custom" src="/image/Brand/Intel.svg" alt="Бренд Intel">
                         <img src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
                     </button>
-                    <button class="repair-brands__button repair-brands__button-all" type="button">
+                    <button class="repair-brands__button" type="button">
                         <img class="repair-brands__img-custom" src="/image/Brand/Dell.svg" alt="Бренд Dell">
                         <img src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
                     </button>
-                    <button class="repair-brands__button repair-brands__button-all" type="button">
+                    <button class="repair-brands__button" type="button">
                         <img class="repair-brands__img-custom" src="/image/Brand/Aoc.svg" alt="Бренд AOC">
                         <img src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
                     </button>
-                    <button class="repair-brands__button repair-brands__button-all" type="button">
+                    <button class="repair-brands__button" type="button">
                         <img class="repair-brands__img-custom" src="/image/Brand/Haier.svg" alt="Бренд Haier">
                         <img src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
                     </button>
-                    <button class="repair-brands__button repair-brands__button-all" type="button">
+                    <button class="repair-brands__button" type="button">
                         <img class="repair-brands__img-custom" src="/image/Brand/Huawei.svg" alt="Бренд Huawei">
                         <img src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
                     </button>
-                    <button class="repair-brands__button repair-brands__button-all" type="button">
+                    <button class="repair-brands__button" type="button">
                         <img class="repair-brands__img-custom" src="/image/Brand/LG.svg" alt="Бренд LG">
                         <img src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
                     </button>
-                    
                 </div>
-
-                <button class="repair-brands__all-view" type="button">
-                        <img class="repair-brands__all-view-ico" src="/image/About/icon.svg" alt="Стрелка вниз">
-                    <div class="repair-brands__all-view-text">Показать все</div>
-                </button>
             </div>
+
+            <button class="repair-brands__all-view" type="button">
+                <img class="repair-brands__all-view-ico" src="/image/About/icon.svg" alt="Стрелка вниз">
+                <div class="repair-brands__all-view-text">Показать все</div>
+            </button>
 
             <div class="repair-type">
                 <p class="repair-type__title">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</p>
@@ -246,30 +325,29 @@
                         <img class="repair-type__img"src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
                     </button>
 
-                    <button class="repair-type__button repair-type__button-all" type="button">
+                    <button class="repair-type__button" type="button">
                         <p class="repair-type__button-text">Ремонт ноутбуков</p>
                         <img class="repair-type__img"src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
                     </button>
-                    <button class="repair-type__button repair-type__button-all" type="button">
+                    <button class="repair-type__button" type="button">
                         <p class="repair-type__button-text">Ремонт ноутбуков</p>
                         <img class="repair-type__img"src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
                     </button>
-                    <button class="repair-type__button repair-type__button-all" type="button">
+                    <button class="repair-type__button" type="button">
                         <p class="repair-type__button-text">Ремонт ноутбуков</p>
                         <img class="repair-type__img"src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
                     </button>
-                    <button class="repair-type__button repair-type__button-all" type="button">
+                    <button class="repair-type__button" type="button">
                         <p class="repair-type__button-text">Ремонт ноутбуков</p>
                         <img class="repair-type__img"src="/image/Button/buttonGo.svg" alt="Кнопка перехода">
                     </button>
-
                 </div>
-
-                <button class="repair-type__all-view" type="button">
-                        <img class="repair-type__all-view-ico" src="/image/About/icon.svg" alt="Стрелка вниз">
-                    <div class="repair-type__all-view-text">Показать все</div>
-                </button>
             </div>
+
+            <button class="repair-type__all-view" type="button">
+                <img class="repair-type__all-view-ico" src="/image/About/icon.svg" alt="Стрелка вниз">
+                <div class="repair-type__all-view-text">Показать все</div>
+            </button>
 
             <div class="price">
                 <p class="price__title">ЦЕНА НА УСЛУГИ</p>
@@ -348,5 +426,8 @@
                 <p>Информация, размещенная на данной странице, не является публичной офертой</p>
             </div>
         </main>
+        
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     </body>
 </html>
